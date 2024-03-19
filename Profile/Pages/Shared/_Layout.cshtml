@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0033) https://rainbowit.net/html/inbio/-->
+<html lang="en" class=" sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CodeQuest: Onwuka Peter's Journey in Software Development</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/file/logos-circle.png">
+    <!-- CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/file/bootstrap.min.css">
+    <link rel="stylesheet" href="~/file/slick.css">
+    <link rel="stylesheet" href="~/file/slick-theme.css">
+    <link rel="stylesheet" href="~/file/aos.css">
+    <link rel="stylesheet" href="~/file/feature.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="~/file/style.css">
+    <style>
+        @@-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @@keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        input.bito-email-input:-webkit-autofill,
+        input.bito-email-input:-webkit-autofill:hover,
+        input.bito-email-input:-webkit-autofill:focus {
+            -webkit-text-fill-color: rgb(255, 255, 255);
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+        #bito-body::-webkit-scrollbar,
+        #emptyDiv-inner::-webkit-scrollbar,
+        #loginParentDiv-outer::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 24px;
+            color: #7a8084;
+        }
+
+        #bito-body::-webkit-scrollbar-thumb,
+        #emptyDiv-inner::-webkit-scrollbar-thumb,
+        #loginParentDiv-outer::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+            #bito-body::-webkit-scrollbar-thumb:hover,
+            #emptyDiv-inner::-webkit-scrollbar-thumb:hover,
+            #loginParentDiv-outer::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+        .login-network-error-container {
+            padding: 10px 16px 8px;
+            color: rgb(255 0 0);
+        }
+
+        #loader {
+            background-color: #00000085;
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            z-index: 3002;
+            opacity: 9999;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            vertical-align: text-bottom;
+            border: 1.75px solid #fff;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: spinner-border .75s linear infinite;
+            margin-top: -30px
+        }
+
+        @@keyframes spinner-border {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <meta name="google-site-verification" content="pdV3St7BK4P1R-njMePqBk3mvgkXv3fSUCbhv61u0r4" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C882Q5WECN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C882Q5WECN');
+    </script>
+</head>
+
+<body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+
+    <!-- Start Header -->
+    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky sticky">
+        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
+            <!-- Start Header Left -->
+            <div class="col-lg-2 col-6">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="~/file/logo.png" alt="Onwuka Peter's Portfolio">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Left -->
+            <!-- Start Header Center -->
+            <div class="col-lg-10 col-6">
+                <div class="header-center">
+                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
+                        <!-- Start Mainmanu Nav -->
+                        <ul class="primary-menu nav nav-pills">
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
+                        </ul>
+                        <!-- End Mainmanu Nav -->
+                    </nav>
+                    <!-- Start Header Right  -->
+                    <div class="header-right">
+                        <div class="hamberger-menu d-block d-xl-none">
+                            <i id="menuBtn" class="feather-menu humberger-menu"></i>
+                        </div>
+                        <div class="close-menu d-block">
+                            <span class="closeTrigger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- End Header Right  -->
+
+                </div>
+            </div>
+            <!-- End Header Center -->
+        </div>
+    </header>
+    <!-- End Header Area -->
+    <!-- Start Popup Mobile Menu  -->
+    <div class="popup-mobile-menu">
+        <div class="inner">
+            <div class="menu-top">
+                <div class="menu-header">
+                    <a class="logo" href="#">
+                        <img src="~/file/logos-circle.png" alt="Onwuka Peter's Portfolio">
+                    </a>
+                    <div class="close-button">
+                        <button class="close-menu-activation close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+                    </div>
+                </div>
+                <p class="discription" style="text-align:justify;">
+                    As a software developer, I have an impressive track record of crafting innovative solutions. For a decade, I have transitioned from an entry-level position to a CTO, demonstrating my skill and dedication to the industry. My proficiency in a range of technologies, including C#,.NET Framework, SQL Server, Azure, AWS, HTML, CSS, JavaScript, and TypeScript, is certainly noteworthy. Additionally, my leadership as JCI President at the JCI Oriental Owerri Chapter indicates that I can inspire and guide others towards success. Overall, my experience and expertise make me a valuable asset to the software development field.
+                </p>
+            </div>
+            <div class="content">
+                <ul class="primary-menu nav nav-pills onepagenav">
+                    <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item current"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
+                </ul>
+                <!-- social sharea area -->
+                <div class="social-share-style-1 mt--40">
+                    <span class="title">find with me</span>
+                    <ul class="social-share d-flex liststyle">
+
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/onwuka-peter-a80bbb131/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://twitter.com/ONWUKAPETEREME2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                                    <path d="M23 3a9.5 9.5 0 0 1-2.7.7 4.82 4.82 0 0 0 2.1-2.7 9.64 9.64 0 0 1-3.1 1.2A4.74 4.74 0 0 0 14.5 0c-2.6 0-4.7 2.1-4.7 4.7 0 .4 0 .8.1 1.2a13.49 13.49 0 0 1-9.8-5 4.58 4.58 0 0 0-.6 2.4c0 1.6.8 3 2 3.8a4.88 4.88 0 0 1-2.1-.6v.1c0 2.2 1.6 4.1 3.7 4.5a4.87 4.87 0 0 1-2.1.1c.6 1.8 2.4 3 4.4 3a9.54 9.54 0 0 1-5.8 2 12.66 12.66 0 0 0 6.8 2c8.2 0 12.7-6.8 12.7-12.7 0-.2 0-.5 0-.7a8.85 8.85 0 0 0 2.3-2.3z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a href="https://www.instagram.com/apiscopi/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/peteremeka.onwuka">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Mobile Menu  -->
+
+
+    @RenderBody()
+
+
+
+    <!-- Start Footer Area -->
+    <div class="rn-footer-area rn-section-gap section-separator">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-area text-center">
+
+                        <div class="logo">
+                            <a href="#">
+                                <img src="~/file/logo.png" alt="Onwuka Peter's Portfolio">
+                            </a>
+                        </div>
+
+                        <p class="description mt--30">© 2024 Onwuka Peter's Portfolio. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Area -->
+    <!-- JS ============================================ -->
+    <script src="~/file/jquery.js"></script>
+    <script src="~/file/modernizer.min.js"></script>
+    <script src="~/file/feather.min.js"></script>
+    <script src="~/file/slick.min.js"></script>
+    <script src="~/file/bootstrap.js"></script>
+    <script src="~/file/text-type.js"></script>
+    <script src="~/file/wow.js"></script>
+    <script src="~/file/aos.js"></script>
+    <script src="~/file/particles.js"></script>
+    <script src="~/file/jquery-one-page-nav.js"></script>
+    <!-- main JS -->
+    <script src="~/file/main.js"></script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
