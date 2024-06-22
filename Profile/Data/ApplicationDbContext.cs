@@ -9,5 +9,7 @@ namespace Profile.Data
             : base(options)
         {
         }
+
+        public DbSet<Application> Applications { get; set; }
     }
 }

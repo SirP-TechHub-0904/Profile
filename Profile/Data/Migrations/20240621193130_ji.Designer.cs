@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Profile.Data;
 
@@ -11,9 +12,11 @@ using Profile.Data;
 namespace Profile.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240621193130_ji")]
+    partial class ji
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -232,13 +235,7 @@ namespace Profile.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ApplicationDateRange")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ApplicationInformation")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Course")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Finance")

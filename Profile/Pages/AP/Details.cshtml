@@ -1,0 +1,55 @@
+﻿@page
+@model Profile.Pages.AP.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container" style="margin-top:150px;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body" style="background-color:white !important;color:black !important;">
+
+                    <h1 style="color:black;">Details</h1>
+
+                    <div>
+                        <h4 style="color:black;">Application</h4>
+                        <hr />
+                        <dl class="row">
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Application.SchoolName)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Application.SchoolName)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Application.Location)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Application.Location)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Application.ApplicationInformation)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Application.ApplicationInformation)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Application.Finance)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Application.Finance)
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <a asp-page="./Edit" asp-route-id="@Model.Application?.Id" class="btn btn-primary">Edit</a> |
+                        <a asp-page="./Index" class="btn btn-primary">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

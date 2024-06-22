@@ -5,9 +5,25 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>CodeQuest: Onwuka Peter's Journey in Software Development</title>
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="">
+
+
+
+
+    <title>Peter Onwuka - Freelance Full-Stack Web Developer / C# / .NET / MVC / Razor / Blazor / JavaScript / Azure / AWS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Experienced freelance full-stack developer based in Abuja, Nigeria">
+    <meta name="keywords" content="c#, .NET, Microsoft, Azure, React, Javascript, Freelancer, Consultant, Full-Stack, SQL Server, MongoDB, AWS, MVC, Razor, Blazor, Angular, Contentful">
+    <meta name="author" content="Peter Onwuka">
+    <meta property="og:image" content="https://onwuka.com.ng/img/peter-1.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/img/peter-1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/img/peter-1.png">
+
+
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="~/file/logos-circle.png">
@@ -18,6 +34,7 @@
     <link rel="stylesheet" href="~/file/slick-theme.css">
     <link rel="stylesheet" href="~/file/aos.css">
     <link rel="stylesheet" href="~/file/feature.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Style css -->
     <link rel="stylesheet" href="~/file/style.css">
     <style>
@@ -108,6 +125,113 @@
                 transform: rotate(360deg);
             }
         }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Additional CSS if needed */
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-container {
+            width: 50%; /* Adjust this width as needed */
+            float: left; /* Ensure it stays floated */
+        }
+
+        @@media only screen and (max-width: 767px) {
+            .sticky .header-wrapper {
+                height: 70px;
+                padding: 0 10px;
+            }
+        }
+    </style>
+    <style>
+        /* Custom styles for carousel control icons */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #ff0000; /* Red color */
+        }
+
+            /* Optional: Adjust size of icons */
+            .carousel-control-prev-icon::before,
+            .carousel-control-next-icon::before {
+                font-size: 2rem; /* Adjust size as needed */
+            }
+
+        .modal .modal-dialog .modal-content .modal-body .text-content p {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .slide .thumbnail::before {
+            z-index: 0;
+            width: 0;
+            height: calc(100% - 130px);
+            content: "";
+            left: 0;
+            bottom: 0;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background: var(--background-color-1);
+            box-shadow: var(--shadow-1);
+            border-radius: 6px;
+        }
+
+        .slide .social-share-inner-left .social-share li a {
+            
+            background: none;
+            box-shadow: none;
+        }
+        .progress-charts h6.heading {
+            margin-bottom: 5px;
+            color: #ffffff;
+            font-size: 12px; 
+            letter-spacing: 2px;
+            opacity: 0.9;
+            font-weight: 900;
+        }
+        .progress-charts + .progress-charts {
+            margin-top: 18px;
+        }
+        .progress-charts .progress {
+            height: 13px;
+            overflow: visible;
+            font-size: 14px;
+            border-radius: 10px;
+            padding: 3px 0;
+            background: #212428;
+            box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.4588235294), inset -8px -8px 16px rgba(56, 62, 69, 0.4588235294);
+        }
+        .tags {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+            .tags > li {
+                display: inline-block;
+            }
+            .tags a:first-child {
+                margin-left: 0;
+            }
+
+            .tags a {
+                display: inline-block;
+                font-size: 12px;
+                line-height: 1.5em;
+                color: #666;
+                padding: 2px 7px;
+                background-color: #fff;
+                border-radius: 3px;
+                border: 2px solid #e5e5e5;
+                margin: 3px 2px 2px;
+            }
     </style>
 
     <meta name="google-site-verification" content="pdV3St7BK4P1R-njMePqBk3mvgkXv3fSUCbhv61u0r4" />
@@ -266,8 +390,13 @@
     </div>
     <!-- End Footer Area -->
     <!-- JS ============================================ -->
-    <script src="~/file/jquery.js"></script>
+    @*<script src="~/file/jquery.js"></script>*@
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="~/file/modernizer.min.js"></script>
+
     <script src="~/file/feather.min.js"></script>
     <script src="~/file/slick.min.js"></script>
     <script src="~/file/bootstrap.js"></script>
@@ -278,7 +407,12 @@
     <script src="~/file/jquery-one-page-nav.js"></script>
     <!-- main JS -->
     <script src="~/file/main.js"></script>
-
+    <script>
+        // jQuery initialization for the carousel
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
